@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO WEB APP</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h1>TODO <span>WEB APP </span></h1>
+    <form id="TODO_TASKS">
+      <br />
+      <label id="lblsuccess" class="text-success" style="display: none">
+      </label>
+      <div id="new_todo">
+        <h2>Add tasks</h2>
+        <input
+          type="text"
+          name="todo"
+          onkeyup="toggleButton(this, 'submit')"
+          id="todo-text"
+          placeholder="Enter a new item into todo list"
+        />
+        <div class="submit_button">
+          <input
+            type="submit"
+            class="btn"
+            id="submit"
+            value="Add Todo"
+            disabled
+          />
+        </div>
+      </div>
+    </form>
+    <div>
+      <form id="addForm">
+        <h2 class="mt-4">Your Tasks TO Be Done</h2>
+        <h4>
+          <ul class="list-group" id="items"></ul>
+          <br />
+        </h4>
+      </form>
+    </div>
+
+    <div id="Mark_todo">
+      <h2 class="mt-4">Completed Tasks</h2>
+      <form id="completeForm">
+        <h4>
+          <ul class="list-group" id="completedItems"></ul>
+          <br />
+        </h4>
+      </form>
+    </div>
+    <script src="./logic.js"></script>
+  </body>
+</html>

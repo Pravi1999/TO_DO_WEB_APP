@@ -1,0 +1,188 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ad9de6;
+  height: 35%;
+  width: 50%;
+  margin: auto;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  padding: 30px 0;
+  border-radius: 8px;
+}
+h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif,
+    Times, serif;
+  color: rgb(33, 34, 34);
+}
+#TODO_TASKS div {
+  position: relative;
+  padding: 30px 15px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px rgba(26, 23, 23, 0.9);
+  text-decoration: none;
+}
+#Mark_todo {
+  position: relative;
+  padding: 30px 15px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px rgba(26, 23, 23, 0.9);
+}
+#Mark_todo ul {
+  border-radius: 5px;
+  width: 70%;
+  padding: 12px;
+  height: 45px;
+  font-size: 15px;
+  border: 2px solid #d1d3d9;
+  color: #111111;
+  font-weight: 500;
+  position: relative;
+  text-decoration: none;
+}
+form ul {
+  flex-direction: row;
+}
+#addForm {
+  position: relative;
+  padding: 30px 15px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px rgba(26, 23, 23, 0.9);
+  text-decoration: none;
+}
+div input {
+  border-radius: 5px;
+  width: 70%;
+  padding: 12px;
+  height: 45px;
+  font-size: 15px;
+  border: 2px solid #d1d3d9;
+  color: #111111;
+  font-weight: 500;
+  position: relative;
+  text-decoration: none;
+}
+div input:focus {
+  outline: none;
+  border-color: #19a68c;
+  text-decoration: none;
+}
+#TODO_TASKS button {
+  position: relative;
+  float: right;
+  width: 100px;
+  height: 45px;
+  border-radius: 5px 9px 15px 8px;
+  font-weight: 500;
+  font-size: 16px;
+  background: #19a68c;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+div button {
+  position: relative;
+  width: 200px;
+  height: 35px;
+  border-radius: 5px 9px 10px 8px;
+  font-weight: 500;
+  font-size: 16px;
+  background: #4310dd;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+#tasks {
+  width: 100%;
+  position: relative;
+  margin-top: 40px;
+  font-size: 20px;
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 5px;
+}
+.task {
+  background: #fff;
+  height: 50px;
+  padding: 5px 10px;
+  border-radius: 0px;
+  margin-top: 10px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border-bottom: 2px solid #d1d3d9;
+}
+.task span {
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.task button {
+  border: none;
+  background: #19a68c;
+  height: 100%;
+  width: 80px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.completed {
+  text-decoration: line-through;
+  font-size: 45px;
+  opacity: 0.7;
+}
+#submit {
+  color: #fff;
+  font-weight: 500;
+  color: #fafafa;
+  background: #1612ff;
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: 2px solid #1612ff;
+  transition: all 0.3s ease-in-out;
+}
+li:last-child {
+  margin-bottom: 20px !important;
+}
+#submit:hover {
+  background: none;
+  color: #1612ff;
+}
+.content .media-icons a:hover {
+  border-color: #eb2f06;
+}
+.actions {
+  opacity: 0;
+  transition: 0.3s;
+}
+.list-group-item:hover .actions {
+  opacity: 100%;
+  transition: 0.2s;
+}
+
+@media (max-width: 577px) {
+  #addForm input[type="submit"] {
+    margin-top: 12px;
+    width: 100%;
+  }
+  li button {
+    margin-bottom: 8px;
+  }
+}
